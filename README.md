@@ -34,7 +34,7 @@ Repository: [lijinanPicture](https://github.com/Li-Jinan/lijinanPicture)
 
 基于 Spring Boot + Redis + Caffeine + Sa-Token + ShardingSphere + Disruptor + WebSocket 构建的高并发协作图库系统。项目覆盖公共图库、私有空间、团队空间、实时协同编辑、图片审核、空间分析、批量管理和 AI 扩图等业务。
 
-面试官可能关注的后端点：
+核心工作：
 
 - 权限体系：基于 Redis Session、自定义注解和 Spring AOP 实现统一鉴权，支持 5 类操作级权限控制，降低鉴权代码重复率。
 - 缓存设计：构建 Redis + Caffeine 多级缓存体系，引入随机过期时间缓解缓存雪崩，降低热点查询下的数据库压力。
@@ -49,7 +49,7 @@ Repository: [code-ai-agent](https://github.com/Li-Jinan/code-ai-agent)
 
 基于 Spring AI + Spring Boot + RAG + Tool Calling + MCP 构建的多模型 AI 智能体应用，支持 ReAct 自主思考、多轮对话隔离、记忆持久化、知识库检索、结构化输出和流式响应。
 
-面试官可能关注的后端点：
+核心工作：
 
 - 模型接入：统一接入灵积与本地 Ollama，封装多模型可切换策略，兼顾成本和效果。
 - 记忆体系：基于 Spring AI ChatMemory + Advisor 实现多轮对话记忆，结合 Caffeine 预加载历史会话数据。
@@ -69,10 +69,6 @@ Repository: [code-ai-agent](https://github.com/Li-Jinan/code-ai-agent)
 ## 联系方式
 
 - Email: 1933521002@qq.com
-
-## 简历文本版
-
-- [腾讯技术开发岗后端向简历文本](resume/tencent-backend.md)
 
 ## GitHub Stats
 
