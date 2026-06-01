@@ -6,7 +6,7 @@
 
 ## 求职定位
 
-- 目标岗位：腾讯技术开发岗 / Java 后端开发
+- 目标岗位：技术开发岗 / Java 后端开发 / AI应用开发
 - 核心能力：Java 后端服务、业务建模、缓存设计、数据库优化、权限系统、WebSocket 实时协同、工程部署
 - 加分方向：Spring AI、RAG、Tool Calling、MCP、AI Agent 应用开发
 
