@@ -54,10 +54,9 @@ Company: 上海禾赛科技有限公司
 - 面向调度场景的自动化 Skill，支持 Mock 算法结果并缩短联调验证时间。
 - 第三方平台调用 Kosmo 重建算力与计费能力的接口链路和自动化框架建设。
 
-### 其他项目
+### Agent 实验项目
 
 - [workAppAgent](https://github.com/Li-Jinan/workAppAgent)：Spring AI / MCP / RAG / Tool Calling 学习与实验项目，面向工作助手与工具调用场景。
-- [lijinanPicture](https://github.com/Li-Jinan/lijinanPicture)：智能协同云图库项目，覆盖权限控制、多级缓存、WebSocket 协同编辑、COS 图片处理和动态分表等后端能力。
 
 ## 竞赛与荣誉
 
