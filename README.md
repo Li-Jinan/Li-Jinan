@@ -2,7 +2,7 @@
 
 电子科技大学计算机科学与工程学院电子信息专业硕士在读，方向聚焦 **LLM 应用系统、AI Agent、RAG、Tool Calling、自动化工作流与后端系统集成**。
 
-我更希望自己被看作一名 AI 应用工程候选人：后端服务开发是工程底座，重点能力放在把 LLM、Agent 工作流、工具调用、流式输出、对象存储和平台调度能力落到可运行的业务系统中。
+我更希望自己被看作一名 AI 应用工程候选人：后端服务开发是工程底座，重点能力放在把 LLM、Agent 工作流、工具调用、SSE 流式反馈、微服务治理与对象存储能力落到可运行的业务系统中。
 
 ## 求职定位
 
@@ -25,21 +25,22 @@
 
 ## 重点项目
 
-### AI 代码生成与智能体应用平台
+### 今安 AI 应用开发平台（code-ai-agent）
 
 Repository: [code-ai-agent](https://github.com/Li-Jinan/code-ai-agent)  
-Online: [http://124.221.85.117](http://124.221.85.117)
+Online: [https://ai.lijinan.cn](https://ai.lijinan.cn)  
+API Docs: [https://ai.lijinan.cn/api/doc.html#/home](https://ai.lijinan.cn/api/doc.html#/home)
 
-基于 LLM + Tool Calling + 工作流编排构建的 AI 代码生成 Agent 平台，支持从用户需求输入到代码生成、文件写入、页面预览、代码下载和应用部署的完整链路。
+基于 Vue 3、Spring Boot、LangChain4j、Dubbo 与 Nacos 构建的微服务化 AI 代码生成平台。用户可以通过自然语言生成 HTML、多文件网站或 Vue 项目，并继续完成可视化修改、在线预览、源码下载与部署发布。
 
 重点能力：
 
-- 基于 LangChain4j 构建 AI 代码生成服务，支持 HTML、多文件和 Vue 项目等生成模式。
-- 基于 Tool Calling 封装文件读取、写入、修改、删除和目录读取等工具能力。
-- 基于 LangGraph4j 编排提示词增强、代码生成、质量检查、资源收集和项目构建流程。
-- 基于 SSE 实时输出生成过程，前端同步展示 Agent 执行状态和生成结果。
-- 基于 Redis ChatMemory 保存应用级对话上下文，并使用 Caffeine 缓存 AI 服务实例。
-- 支持生成应用的在线预览、代码下载、部署发布和后台管理。
+- 将应用管理与 AI 生成、用户管理、网页截图拆分为 `app`、`user`、`screenshot` 三个独立服务，通过 Nacos 完成服务注册与发现，并使用 Dubbo 进行内部 RPC 调用。
+- 基于 LangChain4j 构建 AI 代码生成服务，支持 HTML、多文件网站和 Vue 项目等生成模式。
+- 基于 Tool Calling 封装文件读取、写入、修改、删除和目录读取等工具，使生成项目能够持续迭代。
+- 通过 SSE 实时返回模型输出和工具执行信息，前端同步展示生成过程与结果。
+- 使用 Redis ChatMemory 隔离应用级对话上下文，并结合 MySQL 对话历史恢复会话；使用 Caffeine 缓存 AI 服务实例、Redisson 实现用户级限流。
+- 支持可视化选区修改、iframe 在线预览、源码下载和站点部署；截图服务使用 Selenium 生成作品封面并上传腾讯云 COS。
 
 ### Kosmo 激光雷达算法云平台实习
 
