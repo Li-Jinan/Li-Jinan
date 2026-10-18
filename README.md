@@ -41,7 +41,3 @@
 
 - Email：1933521002@qq.com
 - GitHub：[@Li-Jinan](https://github.com/Li-Jinan)
-
-## GitHub Stats
-
-![Li-Jinan's GitHub stats](https://github-readme-stats.vercel.app/api?username=Li-Jinan&show_icons=true&theme=default&hide_border=true)
