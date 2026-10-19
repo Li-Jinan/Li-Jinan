@@ -1,6 +1,6 @@
 # 李今安 | Java 后端与 AI 应用工程
 
-电子科技大学计算机科学与工程学院电子信息专业硕士在读。关注 Java 后端、LLM 应用工程、Tool Calling、Agent 执行链路与微服务系统可靠性。
+电子科技大学计算机科学与工程学院电子信息专业硕士在读。关注 Java 后端、LLM 应用工程、Tool Calling、Agent 执行链路与微服务系统可靠性与可观测性。
 
 我主要做的是把模型能力接入可运行的业务系统：处理长任务、上下文、工具调用、安全边界、失败恢复与部署问题。
 
@@ -8,7 +8,7 @@
 
 - Java：Java 21、Spring Boot、Spring Cloud、MySQL、Redis。
 - AI 应用：LangChain4j、Spring AI、Tool Calling、MCP、流式输出与上下文管理。
-- 系统工程：后台任务、状态持久化、故障恢复、Dubbo、Nacos、Docker Compose、Nginx。
+- 系统工程：后台任务、状态持久化、故障恢复、Dubbo、Nacos、Docker Compose、Nginx、Micrometer、Prometheus、Grafana。
 - 前端与交付：Vue 3、在线预览、代码下载与应用部署。
 
 ## 公开项目
@@ -25,6 +25,7 @@
 - 隔离 Vue 生成会话中的历史工具消息，识别工具调用协议异常：[aa77392](https://github.com/Li-Jinan/code-ai-agent/commit/aa77392)。
 - 限制文件工具遍历范围和输出规模，补充路径穿越校验；修复异步回调中的监控上下文传递：[ea5783b](https://github.com/Li-Jinan/code-ai-agent/commit/ea5783b)。
 - 完成 MySQL、Redis、Nacos、Selenium 与三个 Dubbo 服务的容器编排、健康检查及统一入口配置：[项目 README](https://github.com/Li-Jinan/code-ai-agent#项目来源与二次开发说明)。
+- 为生成任务补充 Micrometer 指标、Prometheus/Grafana 面板和可复现实验数据：[效果数据](https://github.com/Li-Jinan/code-ai-agent#效果数据)、[PR #2](https://github.com/Li-Jinan/code-ai-agent/pull/2)。
 
 ### [Work App Agent](https://github.com/Li-Jinan/workAppAgent)
 
