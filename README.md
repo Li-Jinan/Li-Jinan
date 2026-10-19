@@ -11,7 +11,7 @@
 - 系统工程：后台任务、状态持久化、故障恢复、Dubbo、Nacos、Docker Compose、Nginx、Micrometer、Prometheus、Grafana。
 - 前端与交付：Vue 3、在线预览、代码下载与应用部署。
 
-## 公开项目
+## 代表项目
 
 ### [今安 AI 应用开发平台](https://github.com/Li-Jinan/code-ai-agent)
 
@@ -25,13 +25,12 @@
 - 隔离 Vue 生成会话中的历史工具消息，识别工具调用协议异常：[aa77392](https://github.com/Li-Jinan/code-ai-agent/commit/aa77392)。
 - 限制文件工具遍历范围和输出规模，补充路径穿越校验；修复异步回调中的监控上下文传递：[ea5783b](https://github.com/Li-Jinan/code-ai-agent/commit/ea5783b)。
 - 完成 MySQL、Redis、Nacos、Selenium 与三个 Dubbo 服务的容器编排、健康检查及统一入口配置：[项目 README](https://github.com/Li-Jinan/code-ai-agent#项目来源与二次开发说明)。
+- 心跳过期判断改为与写入同源的数据库时钟，修复数据库与 JVM 时区不一致时任务被误回收的潜伏问题，真实 MySQL 集成测试覆盖 UTC 与 +08:00：[51e5101](https://github.com/Li-Jinan/code-ai-agent/commit/51e5101)。
 - 为生成任务补充 Micrometer 指标、Prometheus/Grafana 面板和可复现实验数据：[效果数据](https://github.com/Li-Jinan/code-ai-agent#效果数据)、[PR #2](https://github.com/Li-Jinan/code-ai-agent/pull/2)。
 
-### [Work App Agent](https://github.com/Li-Jinan/workAppAgent)
+## 其他项目
 
-基于开源项目 [liyupi/yu-ai-agent](https://github.com/liyupi/yu-ai-agent) 二次开发的工作场景 AI 助手。业务与 Agent 主链路使用 Spring AI；LangChain4j 仅保留为独立调用对比示例，RAG/PgVector 为默认关闭的实验模块。
-
-我完成的可核验改造包括 Agent 专用异步线程池、文件工具路径穿越防护、搜索工具边界处理与对应测试：[2b0df01](https://github.com/Li-Jinan/workAppAgent/commit/2b0df0110409340621e40c6784eefc5271842a71)。
+- [Work App Agent](https://github.com/Li-Jinan/workAppAgent)：基于 [liyupi/yu-ai-agent](https://github.com/liyupi/yu-ai-agent) 的 Spring AI 学习与二次开发项目，个人改动为 Agent 专用线程池、文件工具路径穿越防护与搜索工具边界处理（[2b0df01](https://github.com/Li-Jinan/workAppAgent/commit/2b0df0110409340621e40c6784eefc5271842a71)）。
 
 ## 教育背景
 
